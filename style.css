@@ -1,0 +1,596 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+header {
+    background-color: #3B95D7;
+    height: 85px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding: 15 31;
+}
+
+.big-container {
+    display: flex;
+}
+
+.container-left {
+    width: 400px;
+    background-color: rgba(59, 149, 215, 0.15);
+    margin-top: 5px;
+    height: 979px;
+    overflow: scroll;
+}
+
+.card-member {
+    margin: 13px 39px 18px 22px;
+    border: 0.5px solid #565C4E;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(86, 92, 78, 0.1);
+}
+
+.info-member {
+    display: flex;
+}
+
+.memb-initial {
+    margin: 10px;
+    width: 67;
+    height: 64;
+    background-color: #BDBDBD;
+    border-radius: 50%;
+    position: relative;
+}
+
+.initial {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #666363;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+
+.memb-details {
+    margin: 10px;
+}
+
+.memb-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.memb-id,
+.memb-email {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666363;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 15px;
+}
+
+.btn-ed-del {
+    width: 80px;
+    height: 23px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+}
+
+.btn-edit {
+    background: #D9D9D9;
+    border: 1px solid #767373;
+    color: #666363;
+    margin-right: 20px;
+}
+
+.btn-delete {
+    background: #DD5A5A;
+    border: 1px solid #686868;
+    color: #FFFFFF;
+}
+
+/* forms */
+.container-right {
+    width: calc(100% - 400px);
+}
+
+.add-member,
+.edit-member {
+    background-color: #D9D9D9;
+    margin: 5px 0px 10px 10px;
+    position: relative;
+}
+
+form {
+    padding: 0 40px 0 31px;
+}
+
+.form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3B95D7;
+    border-bottom: 1px solid #000000;
+    margin: 0px 40px 20px 31px;
+    padding-top: 20px;
+}
+
+.form-name,
+.form-details {
+    display: flex;
+}
+
+.form-details {
+    flex-wrap: wrap;
+}
+
+.label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #666363;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.prof-amt {
+    display: flex;
+}
+
+.div-input {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 32px;
+    border: none;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 1435px) {
+
+    .no-xl-margin-right {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .field-xl {
+        max-width: 380px;
+    }
+
+    .field-l {
+        max-width: 331px;
+    }
+
+    .field-m {
+        max-width: 199px;
+    }
+
+    .field-xs {
+        max-width: 116px;
+    }
+
+    .field-city {
+        max-width: 199px;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+
+    .no-margin-right {
+        margin-right: 0;
+    }
+
+    .control-199 {
+        max-width: 199px;
+    }
+
+    .control-116 {
+        max-width: 116px;
+    }
+
+    .control-331 {
+        max-width: 331px;
+    }
+
+    .control-380 {
+        max-width: 380px;
+    }
+
+    .form-sports {
+        max-width: calc(100% - 106px);
+        margin-right: 108px;
+    }
+
+    .container-sports-btn {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .back-btn {
+        display: none;
+    }
+
+}
+
+/* BELOW 1024 */
+
+@media only screen and (max-width: 1025px) {
+    .field-sm-xl {
+        max-width: 100%;
+    }
+
+    .field-sm-m {
+        max-width: 50%;
+    }
+
+    .field-sm-lastname {
+        margin-right: 0;
+    }
+
+    .field-sm-activity {
+        order: 7;
+        max-width: 100%;
+    }
+
+    .field-sm-city {
+        max-width: calc(100% - 116px);
+        padding-right: 47px;
+        margin: 0;
+    }
+
+    .field-sm-country {
+        order: 4;
+        max-width: 199px;
+        margin-right: 43px;
+    }
+
+    .field-sm-gender {
+        order: 6;
+        max-width: 199px;
+        margin-right: 43px;
+    }
+
+    .field-sm-address {
+        order: 1;
+        margin-right: 0;
+    }
+
+    .field-sm-city {
+        order: 2;
+    }
+
+    .field-sm-age {
+        order: 5;
+        max-width: 116px;
+        margin-right: 0;
+    }
+
+    .field-sm-zipcode {
+        order: 3;
+        max-width: 116px;
+        margin-right: 0;
+    }
+
+    .no-sm-padding {
+        padding: 0;
+    }
+
+    .no-sm-margin-right {
+        margin-right: 0;
+    }
+
+    .control-sm-100 {
+        max-width: 100%;
+    }
+
+    .control-sm-116 {
+        max-width: 116px;
+    }
+
+    .control-sm-331 {
+        max-width: 331px;
+    }
+
+    .container-sports-btn {
+        flex-direction: column;
+    }
+
+    .form-sports {
+        margin-bottom: 34px;
+        padding-left: 20px;
+    }
+
+    .edit-member {
+        display: none;
+    }
+
+    .container-sport {
+        margin-right: 70px;
+    }
+
+    .container-toast {
+        max-width: 412px;
+        width: 100%;
+    }
+
+    .back-btn {
+        display: inline-block;
+        text-align: center;
+        padding: 3.5px;
+    }
+
+    .container-left {
+        height: 842px;
+        overflow: scroll;
+    }
+}
+
+/* container activity class*/
+.container-act-cls {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.container-act-cls label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #3B95D7;
+    padding-left: 10px;
+}
+
+.div-professional,
+.div-amateur {
+    display: flex;
+    align-items: center;
+}
+
+/* container sports */
+.form-sports {
+    width: 100%;
+    border: 1px solid #3B95D7;
+    border-radius: 15px;
+    padding: 7px 13px 44px 13px;
+}
+
+.container-sports-btn {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.container-sports {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-sport {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    margin-right: 12px;
+}
+
+.container-sport label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #3B95D7;
+    padding: 0 5px 0 5px;
+}
+
+.form-btn {
+    background-color: #3B95D7;
+    border: 1px solid #686868;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    width: 160px;
+    height: 30px;
+}
+
+/* footer */
+footer {
+    background-color: #3B95D7;
+    margin-left: 10px;
+    padding-left: 40px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+}
+
+.div-f-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-f-2 {
+    margin-right: 90px;
+}
+
+footer a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* select styling gender*/
+.gender-select::-ms-expand {
+    display: none;
+}
+
+.gender-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    padding: 0 15px 0 10px;
+}
+
+.div-gender-container {
+    position: relative;
+}
+
+.div-gender-container::after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 14px;
+    height: 10px;
+    background: #666363;
+    -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    pointer-events: none;
+}
+
+/* confirm delete member */
+.container-confirm-detele {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.confirm-delete {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    max-width: 450px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.delete-member {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 60px 20px 20px 20px;
+}
+
+.delete-message {
+    padding: 10px;
+}
+
+/* Toasts */
+.container-toast {
+    max-width: 638px;
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    animation: toast 5000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+@keyframes toast {
+
+    0%,
+    100% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.toast-ok {
+    background-color: #48B791;
+    display: none;
+}
+
+.toast-error {
+    background-color: #DD482D;
+    display: none;
+}
+
+.toast {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+}

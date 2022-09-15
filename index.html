@@ -1,0 +1,325 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Proiect</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <h1>Sport club members</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="big-container">
+                <div id="member" class="container-left members-list">
+
+                </div>
+                <div class="container-right">
+                    <div class="add-member">
+                        <h2 class="form-title">Add new member</h2>
+                        <form name="addMember" id="addMember" action="http://localhost:3000/users/" method="POST">
+                            <div class="form-name">
+                                <div class="field field-m field-sm-m control-sm-100">
+                                    <label class="label" for="firstName">First name</label>
+                                    <div class="div-input control-199">
+                                        <input class="input input-1" type="text" name="firstName" id="firstName"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="field field-m field-sm-m field-sm-lastname control-sm-100">
+                                    <label class="label" for="first-name">Last name</label>
+                                    <div class="div-input control-199">
+                                        <input class="input input" type="text" name="lastName" id="lastName" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-details">
+                                <div class="field field-xl field-sm-address">
+                                    <label class="label" for="address"> Address</label>
+                                    <div class="div-input control-380">
+                                        <input class="input" type="text" name="address" id="address" required>
+                                    </div>
+                                </div>
+                                <div class="field field-xs field-sm-zipcode">
+                                    <label class="label" for="zip-code">Zip code</label>
+                                    <div class="div-input control-116">
+                                        <input class="input" type="text" name="zip-code" id="zipCode" required>
+                                    </div>
+                                </div>
+                                <div class="field field-city field-sm-city">
+                                    <label class="label" for="city">City</label>
+                                    <div class="div-input control-199">
+                                        <input class="input" type="text" name="city" id="city" required>
+                                    </div>
+                                </div>
+                                <div class="field field-m field-sm-country no-xl-margin-right">
+                                    <label class="label" for="country">Country</label>
+                                    <div class="div-input control-199">
+                                        <input class="input" type="text" name="country" id="country" required>
+                                    </div>
+                                </div>
+                                <div class="field field-m field-sm-gender">
+                                    <label class="label" for="gender">Gender</label>
+                                    <div class="div-input div-gender-container">
+                                        <select class="input control-199 gender-select" name="gender" id="gender"
+                                            required>
+                                            <option disabled selected>female/male/not specified</option>
+                                            <option value="female">female</option>
+                                            <option value="male">male</option>
+                                            <option value="not-specified">not specified</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field field-xs field-sm-age">
+                                    <label class="label" for="age">Age</label>
+                                    <div class="div-input control-116 control-sm-116">
+                                        <input class="input" type="number" name="age" id="age" required>
+                                    </div>
+                                </div>
+                                <div class="field div-activity-class field-sm-activity field-l">
+                                    <label class="label">Activity class</label>
+                                    <div class="input div-input control-331 control-sm-331 container-act-cls">
+                                        <fieldset name="activity" id="activity_class">
+                                            <div>
+                                                <input type="radio" name="activity_class" id="professional"
+                                                    value="professional" /><label
+                                                    for="professional">professional</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="activity_class" id="amateur"
+                                                    value="amateur" /><label for="amateur">amateur</label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-sports-btn">
+                                <div class="form-sports">
+                                    <label class="label" for="practiced-sports"> Practiced sports</label>
+                                    <div class="container-sports">
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="sports" id="running" value="running">
+                                            </div>
+                                            <label for="running">running</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="sports" id="cycling" value="cycling">
+                                            </div>
+                                            <label for="cycling">cycling</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="sports" id="swimming" value="swimming">
+                                            </div>
+                                            <label for="swimming">swimming</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="sports" id="walking" value="walking">
+                                            </div>
+                                            <label for="walking">walking</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="sports" id="skiing" value="skiing">
+                                            </div>
+                                            <label for="skiing">skiing</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div-form-btn">
+                                    <button type="submit" class='form-btn' onClick="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container-toast toast-ok">
+                            <p class="toast">User saved succesfully.</p>
+                        </div>
+                    </div>
+                    <div class="edit-member">
+                        <h2 class="form-title">Edit member</h2>
+                        <form name="editMember" id="editMember" action="http://localhost:3000/users/" method="PUT">
+                            <div class="form-name">
+                                <input type="hidden" name="customerid" value="" id="e-id">
+                                <div class="field field-m field-sm-m control-sm-100">
+                                    <label class="label" for="firstName">First name</label>
+                                    <div class="div-input control-199">
+                                        <input class="input input-1" type="text" name="firstName" id="e-firstName"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="field field-m field-sm-m field-sm-lastname control-sm-100">
+                                    <label class="label" for="first-name">Last name</label>
+                                    <div class="div-input control-199">
+                                        <input class="input input" type="text" name="lastName" id="e-lastName" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-details">
+                                <div class="field field-xl field-sm-address">
+                                    <label class="label" for="address"> Address</label>
+                                    <div class="div-input control-380">
+                                        <input class="input" type="text" name="address" id="e-address" required>
+                                    </div>
+                                </div>
+                                <div class="field field-xs field-sm-zipcode">
+                                    <label class="label" for="zip-code">Zip code</label>
+                                    <div class="div-input control-116">
+                                        <input class="input" type="text" name="zip-code" id="e-zipCode" required>
+                                    </div>
+                                </div>
+                                <div class="field field-city field-sm-city">
+                                    <label class="label" for="city">City</label>
+                                    <div class="div-input control-199">
+                                        <input class="input" type="text" name="city" id="e-city" required>
+                                    </div>
+                                </div>
+                                <div class="field field-m field-sm-country no-xl-margin-right">
+                                    <label class="label" for="country">Country</label>
+                                    <div class="div-input control-199">
+                                        <input class="input" type="text" name="country" id="e-country" required>
+                                    </div>
+                                </div>
+                                <div class="field field-m field-sm-gender">
+                                    <label class="label" for="gender">Gender</label>
+                                    <div class="div-input div-gender-container">
+                                        <select class="input control-199 gender-select" name="gender" id="e-gender"
+                                            required>
+                                            <option disabled selected>female/male/not specified</option>
+                                            <option value="female">female</option>
+                                            <option value="male">male</option>
+                                            <option value="not-specified">not specified</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field field-xs field-sm-age">
+                                    <label class="label" for="age">Age</label>
+                                    <div class="div-input control-116 control-sm-116">
+                                        <input class="input" type="number" name="age" id="e-age" required>
+                                    </div>
+                                </div>
+                                <div class="field div-activity-class field-sm-activity field-l">
+                                    <label class="label">Activity class</label>
+                                    <div class="input div-input control-331 control-sm-331 container-act-cls">
+                                        <fieldset name="activity" id="activity_class">
+                                            <div>
+                                                <input type="radio" name="e-activity_class" id="e-professional"
+                                                    value="professional" /><label
+                                                    for="professional">professional</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="e-activity_class" id="e-amateur"
+                                                    value="amateur" /><label for="amateur">amateur</label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-sports-btn">
+                                <div class="form-sports">
+                                    <label class="label" for="practiced-sports"> Practiced sports</label>
+                                    <div class="container-sports">
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="e-sports" id="running" value="running">
+                                            </div>
+                                            <label for="running">running</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="e-sports" id="cycling" value="cycling">
+                                            </div>
+                                            <label for="cycling">cycling</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="e-sports" id="swimming" value="swimming">
+                                            </div>
+                                            <label for="swimming">swimming</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="e-sports" id="walking" value="walking">
+                                            </div>
+                                            <label for="walking">walking</label>
+                                        </div>
+                                        <div class="container-sport">
+                                            <div class="div-input-checkbox">
+                                                <span class="span-input-checkbox"></span>
+                                                <input type="checkbox" name="e-sports" id="skiing" value="skiing">
+                                            </div>
+                                            <label for="skiing">skiing</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div-form-btn">
+                                    <button type="submit" class='form-btn' onClick="submit">Update</button>
+                                    <span class='form-btn back-btn'>Back</span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container-toast toast-error">
+                            <p class="toast">Error while updating member!</p>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="div-f-1">
+                            <div class="div-f-2">
+                                <a href="">• Recent news</a>
+                            </div>
+                            <div class="div-f-2">
+                                <a href="">• About Us</a>
+                            </div>
+                        </div>
+                        <div class="div-f-1">
+                            <div class="div-f-2">
+                                <a href="">• Services</a>
+                            </div>
+                            <div class="div-f-2">
+                                <a href="">• Contact Us</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="container-confirm-detele">
+                <div class="confirm-delete">
+                    <div class="delete-member">Detele member</div>
+                    <p class="delete-message">Are you sure you want to delete this item?</p>
+                    <div>
+                        <button class="btn-edit btn-ed-del cancel-button">Cancel</button>
+                        <button class="btn-delete btn-ed-del delete-button">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="displayMember.js"></script>
+    <script src="addMember.js"></script>
+    <script src="editMember.js"></script>
+
+</body>
+
+</html>
